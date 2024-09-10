@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Portfolio Website</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Hey there!</a>
+        <nav>
+            <a href="#" class="active">Home</a>
+            <a href="#skills">Skills</a>
+            <a href="#">Education</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <section class="home">
+        <div class="home-img">
+            <img src="Utils/Picsart_24-09-01_16-22-48-333.jpg" alt="Web_Designer">
+        </div>
+        <div class="home-content">
+            <h1>I am <span>Ankit</span></h1>
+            <h3 class="typing-text">*<span></span></h3>
+            <p>As an emerging tech enthusiast at CHRIST (Deemed to be University), Bengaluru,
+                I am pursuing a Bachelor of Computer Applications (BCA) holding a strong passion for Web Development
+                and Cybersecurity. Mastering new technologies and a cunning curiosity has driven me across.
+                Through my active participation and eagerness, I've had the privilege to work along with creative minds
+                thus sharpening my skills and staying ahead in this evolving world.
+            </p><br>
+            <p class="Imp"><b> Currently seeking Internship/Freelance Opportunities in Web Development and UI/UX Design. </b></p>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <a href="#" class="btn">Hire me</a>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+<section id="projects" class="section projects">
+    <h2 class="section__title">Projects</h2>
+
+    <div class="projects__grid">
+        <div class="project">
+            <h3>Daedalus - A Campus Driven Software</h3>
+            <p class="project__description">
+                Software that connects students with local businesses, allowing them to add, remove, and review establishments.
+            </p>
+            <ul class="project__stack">
+                <li class="project__stack-item">React.js</li>
+                <li class="project__stack-item">Express.js</li>
+                <li class="project__stack-item">Node.js</li>
+                <li class="project__stack-item">MERN</li>
+                <li class="project__stack-item">MongoDB</li>
+            </ul>
+            <a href="https://github.com/ashiksanyo10/Russia-Ukraine_War_EDA" target="_blank" aria-label="source code" class="link link--icon">
+                <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+        </div>
+
+        <div class="project">
+            <h3>Penny_Pilot - An Expense Tracker App</h3>
+            <p class="project__description">
+                An expense tracker app at its finest. Input data, see your previous details, and use the calculator for enhanced capabilities!
+            </p>
+            <ul class="project__stack">
+                <li class="project__stack-item">Python</li>
+                <li class="project__stack-item">tKinter</li>
+            </ul>
+            <a href="https://github.com/possibilities100/pp.git" target="_blank" aria-label="source code" class="link link--icon">
+                <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+        </div>
+
+        <div class="project">
+            <h3>Gesture_Control - Your fingers ur control</h3>
+            <p class="project__description">
+                A Python and OpenCV-based project that helps you navigate through your device, no matter what OS it is.
+            </p>
+            <ul class="project__stack">
+                <li class="project__stack-item">Python</li>
+                <li class="project__stack-item">OpenCV</li>
+            </ul>
+            <a href="https://github.com/possibilities100/Gesture_Control.git" target="_blank" aria-label="source code" class="link link--icon">
+                <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+        </div>
+    </div>
+</section>
+    <section class="timeline-section">
+        <h2>My Educational Journey</h2>
+
+        <div class="timeline">
+
+            <!-- Timeline Item 1 -->
+            <div class="timeline-item">
+                <div class="timeline-content left">
+                    <h3>DAV Public School</h3>
+                    <p>10 years of schooling. Held positions like class representative for 2 years and House Captain for 1 year. Won the inter-school shot-put competition.</p>
+                </div>
+                <div class="timeline-marker"></div>
+                <div class="timeline-year right">
+                    <span>2007 - 2017</span>
+                </div>
+            </div>
+
+            <!-- Timeline Item 2 -->
+            <div class="timeline-item">
+                <div class="timeline-year left">
+                    <span>2017 - 2019</span>
+                </div>
+                <div class="timeline-marker"></div>
+                <div class="timeline-content right">
+                    <h3>ODM Public School</h3>
+                    <p>2 years of secondary education (PCBH). Class representative for 1 year. Majored in Physics, Chemistry, Biology, and PhEd.</p>
+                </div>
+            </div>
+
+            <!-- Timeline Item 3 -->
+            <div class="timeline-item">
+                <div class="timeline-content left">
+                    <h3>CHRIST University (BCA)</h3>
+                    <p>Started in 2023, expected graduation in 2025. Projects include Daedalus (facility sorting system) and Automata Cipher (encryption mechanism).</p>
+                </div>
+                <div class="timeline-marker"></div>
+                <div class="timeline-year right">
+                    <span>2023 - 2025</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
