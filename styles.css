@@ -328,9 +328,6 @@ h2 {
     font-size: 16px;
   }
   
-  .form-group button:hover {
-    background-color: #a13d3d;
-  }
   .form-group button {
     background-color: #b74b4b; /* Default background color (red) */
     color: #fff; /* Text color */
