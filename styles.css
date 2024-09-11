@@ -321,7 +321,6 @@ h2 {
   
   .form-group button {
     position: relative;
-    display: inline-block;
     background-color: #fff; /* Initial background color (white) */
     color: #b74b4b; /* Text color */
     padding: 10px 20px;
@@ -331,7 +330,6 @@ h2 {
     font-size: 16px;
     overflow: hidden;
     z-index: 1;
-    transition: color 0.4s ease, background-color 0.4s ease; /* Smooth transition */
   }
   
   /* Hover effect */
