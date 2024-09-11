@@ -329,7 +329,6 @@ h2 {
   }
   .form-group button {
     position: relative;
-    display: inline-block;
     background-color: #fff; /* Default background color (white) */
     color: #b74b4b; /* Text color */
     padding: 10px 20px;
