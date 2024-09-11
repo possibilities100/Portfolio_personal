@@ -19,7 +19,6 @@ body {
     width: 100%;
     height: 100vh;
     overflow-x: hidden;
-    background-color: #e1e1e1;
     color: black;
 }
 
@@ -174,7 +173,7 @@ span {
     grid-template-columns: repeat(auto-fit, minmax(18em, 1fr));
     grid-gap: 2em;
     padding: 2em;
-    box-shadow: 0px 5px 20px black; /* Slight shadow outside grid */
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1); /* Slight shadow outside grid */
     background-color: #f9f9f9; /* Light background for grid area */
     border-radius: 12px; /* Slight rounding for smooth appearance */
 }
@@ -184,7 +183,7 @@ span {
     margin: 0 auto;
     font-size: 20px;
     text-align: center;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for project cards */
+    box-shadow: 0 4px 15px rgba(0.5, 0.5, 0.5, 0.5); /* Subtle shadow for project cards */
     background-color: #fff;
     border-radius: 12px; /* Rounded corners */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -280,7 +279,7 @@ h2 {
   
   .section__title {
     text-align: center;
-    color: #b74b4b;;
+    color:#b74b4b;
     font-size: 2.5rem;
     margin-bottom: 20px;
   }
@@ -291,7 +290,7 @@ h2 {
     background-color: #fff;
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 15px rgba(0.2, 0.2, 0.2, 0.2);
   }
   
   .form-group {
