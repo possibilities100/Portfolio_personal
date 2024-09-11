@@ -220,7 +220,7 @@ span {
     font-weight: 500;
     font-size: 10px;
     color: var(--clr-fg-alt);
-    background-color: #f1f1f1; /* Slight background for stack items */
+    background-color: #f1f1f1;
     padding: 0.5em 1em;
     border-radius: 8px;
 }
@@ -233,7 +233,7 @@ span {
 }
 
 .link--icon:hover {
-    color: #b74b4b; /* Change color on hover */
+    color: #b74b4b;
 }
 
 .section__title {
@@ -330,6 +330,22 @@ h2 {
   
   .form-group button:hover {
     background-color: #a13d3d;
+  }
+  .form-group button {
+    background-color: #b74b4b; /* Default background color (red) */
+    color: #fff; /* Text color */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+  }
+  
+  .form-group button:hover {
+    background-color: #fff; /* Change to white on hover */
+    color: #b74b4b; /* Change text color to red */
+    border: 1px solid #b74b4b; /* Add a red border for better visibility */
   }
   
   
