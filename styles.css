@@ -271,3 +271,65 @@ h2 {
   .skills__list-item {
     margin: 0.5em;
   }
+
+  /* Contact Section */
+.section.contact {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+  }
+  
+  .section__title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .contact__form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus {
+    border-color: #b74b4b;
+    outline: none;
+  }
+  
+  .form-group button {
+    background-color: #b74b4b;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .form-group button:hover {
+    background-color: #a13d3d;
+  }
+  
+  
