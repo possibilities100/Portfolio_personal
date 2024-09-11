@@ -12,6 +12,7 @@
 
 html {
     font-size: 10px;
+    scroll-behavior: smooth;;
 }
 
 body {
@@ -258,3 +259,15 @@ h2 {
     margin-bottom: 30px;
     font-size: 2.5rem;
 }
+.skills__list {
+    max-width: 450px;
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .skills__list-item {
+    margin: 0.5em;
+  }
