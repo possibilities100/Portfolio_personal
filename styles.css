@@ -284,6 +284,13 @@ h2 {
     margin-bottom: 20px;
   }
   
+  .section__title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #b74b4b;
+  }
+
   .contact__form {
     max-width: 600px;
     margin: 0 auto;
