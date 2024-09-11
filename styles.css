@@ -295,6 +295,7 @@ h2 {
   
   .form-group {
     margin-bottom: 20px;
+    font-size: 16px;
   }
   
   .form-group label {
@@ -310,21 +311,24 @@ h2 {
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adding transition for smooth pop and aura effect */
   }
   
+  /* Pop and red aura effect on focus */
   .form-group input:focus,
   .form-group textarea:focus {
-    border-color: #b74b4b;
-    outline: none;
+    transform: scale(1.05); /* Slightly enlarge the input box */
+    box-shadow: 0 0 10px rgba(183, 75, 75, 0.7); /* Red aura around the input box */
+    border-color: #b74b4b; /* Ensure the border turns red when focused */
+    outline: none; /* Remove the default browser outline */
   }
-  
   
   .form-group button {
     position: relative;
     background-color: #fff; /* Initial background color (white) */
-    color: #b74b4b; /* Text color */
+    color: #b74b4b;
     padding: 10px 20px;
-    border: 2px solid #b74b4b; /* Red border */
+    border: 2px solid #b74b4b;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
@@ -353,4 +357,13 @@ h2 {
     color: #fff; /* Text changes to white */
     background-color: transparent; /* Background stays transparent */
   }
+
+  .form-group {
+    margin-bottom: 20px;
+  }
   
+  .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
