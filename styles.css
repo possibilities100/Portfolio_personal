@@ -318,18 +318,11 @@ h2 {
     outline: none;
   }
   
-  .form-group button {
-    background-color: #b74b4b;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-  }
+  /* Main button styling */
   .form-group button {
     position: relative;
-    background-color: #fff; /* Default background color (white) */
+    display: inline-block;
+    background-color: #fff; /* Initial background color (white) */
     color: #b74b4b; /* Text color */
     padding: 10px 20px;
     border: 2px solid #b74b4b; /* Red border */
@@ -338,9 +331,10 @@ h2 {
     font-size: 16px;
     overflow: hidden;
     z-index: 1;
-    transition: color 0.4s ease; /* Transition for text color */
+    transition: color 0.4s ease, background-color 0.4s ease; /* Smooth transition */
   }
   
+  /* Hover effect */
   .form-group button::before {
     content: '';
     position: absolute;
@@ -358,7 +352,7 @@ h2 {
   }
   
   .form-group button:hover {
-    color: #fff; /* Changes text color to white when hovered */
+    color: #fff; /* Text changes to white */
+    background-color: transparent; /* Background stays transparent */
   }
-  
   
