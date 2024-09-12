@@ -1,7 +1,7 @@
 // Typing effect for the home section
 document.addEventListener("DOMContentLoaded", function () {
     const typingText = document.querySelector(".typing-text span");
-    const words = ["Web Designer", "Aspiring Cybersecurity Analyst"];
+    const words = ["Web Designer","Linux Ricer", "Aspiring Cybersecurity Analyst"];
     let wordIndex = 0;
     let charIndex = 0;
     let typingSpeed = 100;
