@@ -192,7 +192,7 @@ span {
 }
 
 .project1{
-    padding: 20px;
+    padding: 45px;
     margin: 0 auto;
     font-size: 20px;
     text-align: center;
@@ -200,8 +200,8 @@ span {
     background-color: #fff;
     border-radius: 12px; /* Rounded corners */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    max-width: 500px;
-    max-height: 500px;
+    max-width: 350px;
+    margin-top: 35px;
 }
 
 .project:hover {
@@ -285,18 +285,116 @@ h2 {
     margin-bottom: 30px;
     font-size: 2.5rem;
 }
+/* Define keyframes for individual float animations */
+@keyframes float1 {
+    0%, 100% { transform: translate(0, 0); }
+    20% { transform: translate(2px, -2px); }
+    40% { transform: translate(-2px, 2px); }
+    60% { transform: translate(3px, 1px); }
+    80% { transform: translate(-3px, -3px); }
+}
+
+@keyframes float2 {
+    0%, 100% { transform: translate(0, 0); }
+    20% { transform: translate(-2px, 2px); }
+    40% { transform: translate(2px, -2px); }
+    60% { transform: translate(-3px, 3px); }
+    80% { transform: translate(3px, -1px); }
+}
+
+@keyframes float3 {
+    0%, 100% { transform: translate(0, 0); }
+    20% { transform: translate(3px, 2px); }
+    40% { transform: translate(-3px, -2px); }
+    60% { transform: translate(2px, -3px); }
+    80% { transform: translate(-2px, 1px); }
+}
+
+@keyframes float4 {
+    0%, 100% { transform: translate(0, 0); }
+    20% { transform: translate(1px, 1px); }
+    40% { transform: translate(-1px, -1px); }
+    60% { transform: translate(4px, -3px); }
+    80% { transform: translate(-4px, 2px); }
+}
+
+/* Apply animations to individual skills list items */
+.skills__list-item:nth-child(1) {
+    animation: float1 4s ease-in-out infinite;
+}
+
+.skills__list-item:nth-child(2) {
+    animation: float2 5s ease-in-out infinite;
+}
+
+.skills__list-item:nth-child(3) {
+    animation: float3 6s ease-in-out infinite;
+}
+
+.skills__list-item:nth-child(4) {
+    animation: float4 4.5s ease-in-out infinite;
+}
+
+/* Repeat animation for more items */
+.skills__list-item:nth-child(5) {
+    animation: float1 4.2s ease-in-out infinite;
+}
+
+.skills__list-item:nth-child(6) {
+    animation: float2 5.2s ease-in-out infinite;
+}
+
+.skills__list-item:nth-child(7) {
+    animation: float3 6.2s ease-in-out infinite;
+}
+
+.skills__list-item:nth-child(8) {
+    animation: float4 4.8s ease-in-out infinite;
+}
+
+.skills__list-item:nth-child(9) {
+    animation: float1 4.6s ease-in-out infinite;
+}
+
+.skills__list-item:nth-child(10) {
+    animation: float2 5.6s ease-in-out infinite;
+}
+
+.skills__list-item:nth-child(11) {
+    animation: float3 6.6s ease-in-out infinite;
+}
+
+.skills__list-item:nth-child(12) {
+    animation: float4 4.9s ease-in-out infinite;
+}
+
+/* Optional: Add a hover effect */
+.skills__list:hover {
+    background-color: white;
+}
+
+
+/* Flexbox layout for the skills list */
 .skills__list {
-    max-width: 450px;
-    width: 95%;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  .skills__list-item {
+    display: flex; /* Use Flexbox */
+    flex-wrap: wrap; /* Wrap items to the next row if needed */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    gap: 10px; /* Add spacing between items */
+    padding: 10px 20px; /* Adjust padding */
+    background-color: white; /* Background color */
+    border: none; /* Remove border */
+    max-width: 1800px; /* Restrict max width */
+    margin: 0 auto; /* Center the whole container horizontally */
+}
+
+
+
+/* Individual skill items */
+.skills__list-item {
     margin: 0.5em;
   }
+
 
   /* Contact Section */
 .section.contact {
@@ -348,7 +446,6 @@ h2 {
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adding transition for smooth pop and aura effect */
   }
   
-  /* Pop and red aura effect on focus */
   .form-group input:focus,
   .form-group textarea:focus {
     transform: scale(1.05); /* Slightly enlarge the input box */
