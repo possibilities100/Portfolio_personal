@@ -73,7 +73,6 @@ section {
     justify-content: center;
     align-items: center;
     gap: 8rem;
-    background-color: #e1e1e1;
 }
 
 .home .home-content h1 {
@@ -174,9 +173,6 @@ span {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
     justify-items: center;
-    grid-gap: 2em;
-    padding: 2em;
-    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1); /* Slight shadow outside grid */
     background-color: #f9f9f9; /* Light background for grid area */
     border-radius: 12px; /* Slight rounding for smooth appearance */
 }
@@ -416,86 +412,55 @@ h2 {
     margin-bottom: 40px;
     color: #b74b4b;
   }
-
-  .contact__form {
-    max-width: 600px;
-    margin: 0 auto;
-    background-color: #fff;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0.2, 0.2, 0.2, 0.2);
-  }
-  
-  .form-group {
-    margin-bottom: 20px;
-    font-size: 16px;
-  }
-  
-  .form-group label {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: bold;
-  }
-  
-  .form-group input,
-  .form-group textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adding transition for smooth pop and aura effect */
-  }
-  
-  .form-group input:focus,
-  .form-group textarea:focus {
-    transform: scale(1.05); /* Slightly enlarge the input box */
-    box-shadow: 0 0 10px rgba(183, 75, 75, 0.7); /* Red aura around the input box */
-    border-color: #b74b4b; /* Ensure the border turns red when focused */
-    outline: none; /* Remove the default browser outline */
-  }
-  
-  .form-group button {
+  /* Footer Styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
     position: relative;
-    background-color: #fff;
-    color: #b74b4b;
-    padding: 10px 20px;
-    border: 2px solid #b74b4b;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    overflow: hidden;
-    z-index: 1;
-  }
-  
-  /* Hover effect */
-  .form-group button::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background-color: #b74b4b; /* Red background when hovered */
-    z-index: -1;
-    transition: width 0.4s ease; /* Left-to-right transition effect */
-  }
-  
-  .form-group button:hover::before {
-    width: 100%; /* Fills the background when hovered */
-  }
-  
-  .form-group button:hover {
-    color: #fff; /* Text changes to white */
-    background-color: transparent; /* Background stays transparent */
-  }
+    bottom: 0;
+    width: 100%;
+}
 
-  .form-group {
-    margin-bottom: 20px;
-  }
-  
-  .form-group label {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: bold;
-  }
+footer .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+footer .social-icons {
+    margin: 20px 0;
+}
+
+footer .social-icons a {
+    color: #fff;
+    font-size: 24px;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer .social-icons a:hover {
+    color: #4caf50; /* Change to your preferred hover color */
+}
+
+footer .footer-links {
+    margin: 20px 0;
+}
+
+footer .footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 14px;
+}
+
+footer .footer-links a:hover {
+    text-decoration: underline;
+}
+
+footer .footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+}
