@@ -62,3 +62,11 @@ window.addEventListener('scroll', () => {
         }
     });
 });
+// Smooth Scroll for Back to Top Button
+document.querySelector('.back-to-top-btn').addEventListener('click', function (e) {
+    e.preventDefault();
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
